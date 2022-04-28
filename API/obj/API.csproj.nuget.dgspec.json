@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dcerk\\Desktop\\Reactivities\\API\\API.csproj": {}
+    "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dcerk\\Desktop\\Reactivities\\API\\API.csproj": {
+    "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcerk\\Desktop\\Reactivities\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\dcerk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\API\\obj\\",
+        "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Rina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dcerk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dcerk\\Desktop\\Reactivities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Application\\Application.csproj"
+              "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Application\\Application.csproj"
               }
             }
           }
@@ -75,21 +79,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dcerk\\Desktop\\Reactivities\\Application\\Application.csproj": {
+    "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\dcerk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Rina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dcerk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,11 +111,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\dcerk\\Desktop\\Reactivities\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -146,21 +154,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
+    "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\dcerk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Rina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dcerk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -206,21 +218,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dcerk\\Desktop\\Reactivities\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\dcerk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Rina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dcerk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -234,8 +250,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\dcerk\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
@@ -278,7 +294,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
