@@ -1,10 +1,11 @@
 ﻿
+
 using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace Application.Revistat
+namespace Application.LibrariaRevista
 {
     public class RevistaList
     {
@@ -17,12 +18,10 @@ namespace Application.Revistat
             {
                 _context = context;
             }
-
             public async Task<List<Revista>> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await _context.Revistat.ToListAsync();
+                return await _context.Revista.ToListAsync();
             }
-
         }
     }
 }
