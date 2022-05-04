@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qn3VR9Z2UOtMmGG3NUocPwNfgPJiZ9ojehvc+msq9+beTBlSLZrl+4UxpwIgwiKBY0jnS3qUqCGVTBhGOArwdQ==",
+  "dgSpecHash": "o5Xu/MozH0y1GW/DacNa/joIeaVJvtB+ck8YjxgA07JKi/IzSUeHgdj8OPfiT09Aaa4rP6MtgseoVJShpAs7rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Reactivities\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Rina\\Desktop\\Reactivities\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rina\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Rina\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

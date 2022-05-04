@@ -6,6 +6,7 @@ namespace Application.Books
 {
     public class Create
     {
+        
         public class Command : IRequest
         {
             public Book Book { get; set; }
@@ -28,6 +29,7 @@ namespace Application.Books
                 return Unit.Value;
             }
         }
+        
 
     }
 }

@@ -4,10 +4,11 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace Application.Books
+namespace Application.Libraria
 {
     public class BooksList
     {
+        
         public class Query : IRequest<List<Book>> { }
 
         public class Handler : IRequestHandler<Query, List<Book>>
@@ -23,5 +24,6 @@ namespace Application.Books
                 return await _context.Books.ToListAsync();
             }
         }
+        
     }
 }

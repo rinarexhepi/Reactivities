@@ -4,7 +4,7 @@ using Persistence;
 
 namespace Application.Activities
 {
-    public class Details
+    public class LibriById
     {
         public class Query : IRequest<Activity>
         {

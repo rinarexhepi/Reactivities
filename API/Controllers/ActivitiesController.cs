@@ -19,7 +19,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Activity>> GetActivity(int id)
         {
-            return await Mediator.Send(new Details.Query { Id = id });
+            return await Mediator.Send(new LibriById.Query { Id = id });
         }
 
         [HttpPost]
