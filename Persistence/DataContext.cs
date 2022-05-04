@@ -14,5 +14,6 @@ namespace Persistence
         public DbSet<Shteti> Shteti { get; set; }
         public DbSet<Libri> Libri { get; set; }
         public DbSet<LibraPerFemije> LibraPerFemije { get; set; }
+        public DbSet<Tekste> Tekste { get; set; }
     }
 }
