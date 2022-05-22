@@ -1,8 +1,9 @@
-using Application.Activities;
+
 using Application.Core;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
+using System.Collections.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
 
