@@ -1,9 +1,9 @@
 
 using Application.Core;
+using Application.Libraria;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
-using System.Collections.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,14 +16,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
-builder.Services.AddCors( opt =>
+builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("CorsPolicy", policy =>
     {
-        policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
+        policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000/");
     });
 });
-builder.Services.AddMediatR(typeof(List.Handler).Assembly);
+builder.Services.AddMediatR(typeof(LibriList.Handler).Assembly);
 builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
 
 var app = builder.Build();

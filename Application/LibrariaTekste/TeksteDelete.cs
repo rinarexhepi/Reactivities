@@ -18,12 +18,13 @@ namespace Application.LibrariaTekste
                 _context = context;
 
             }
-
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
                 var teksti = await _context.Tekste.FindAsync(request.ID);
 
                 _context.Remove(teksti);
+
+                await _context.SaveChangesAsync();
 
                 return Unit.Value;
             }

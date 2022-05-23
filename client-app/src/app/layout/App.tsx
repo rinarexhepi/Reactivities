@@ -1,14 +1,25 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import LandingPage from './components/landingPage';
+import { Route, Routes } from 'react-router-dom';
+import './styles/App.css';
+import About from './About';
+import Revista from './Revista';
+import Profile from './Profile';
+import LandingPage from './LandingPage';
+import Home from './Home';
 
 function App() {
+
   return (
-    <div className="App">
-        <Header />
-        <LandingPage />
-    </div>
+    <>
+    
+      <Routes>
+        <Route path='/landingpage' element={<LandingPage />}/>
+        <Route path='/home' element={<Home />}/>
+        <Route path='/revista' element={<Revista />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/profile' element={<Profile />}/>
+      </Routes>
+    </>
+    
   );
 }
 

@@ -28,6 +28,8 @@ namespace Application.LibrariaRevista
             {
                 var revista = await _context.Revista.FindAsync(request.Revista.ID);
 
+                _mapper.Map(request.Revista, revista);
+
                 await _context.SaveChangesAsync();
 
                 return Unit.Value;

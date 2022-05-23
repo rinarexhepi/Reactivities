@@ -1,6 +1,4 @@
-﻿
-
-using MediatR;
+﻿using MediatR;
 using Persistence;
 
 namespace Application.LibrariaRevista
@@ -26,7 +24,9 @@ namespace Application.LibrariaRevista
 
                 _context.Remove(revista);
 
-                return Unit.Value;  
+                await _context.SaveChangesAsync();
+
+                return Unit.Value;
             }
         }
     }

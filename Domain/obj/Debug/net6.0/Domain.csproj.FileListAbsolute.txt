@@ -58,3 +58,15 @@ C:\Users\dcerk\Desktop\g\LabCourse1\Domain\obj\Debug\net6.0\Domain.dll
 C:\Users\dcerk\Desktop\g\LabCourse1\Domain\obj\Debug\net6.0\refint\Domain.dll
 C:\Users\dcerk\Desktop\g\LabCourse1\Domain\obj\Debug\net6.0\Domain.pdb
 C:\Users\dcerk\Desktop\g\LabCourse1\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\Rina\Desktop\GitHuubb\LabCourse1\Domain\obj\Debug\net6.0\ref\Domain.dll
