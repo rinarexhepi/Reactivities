@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z7y1ROptOYoeqLut7mrkQkOj2NcT6Il4o21ohsQvbDpE9ajQLORREd7DSrw3CWf2tLPzm2TuqClF4X6gybfukA==",
+  "dgSpecHash": "7Enhl7ZntKLiERy5HhoN5nb7L+SLZ/wkj6rIlZNc0vNILLMUzzYIRcanEd4IDGj4o3PumtNNDGYJIEYaiQuwSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rina\\Desktop\\GitHuubb\\LabCourse1\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Rina\\Desktop\\LabCourse1\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rina\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Rina\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

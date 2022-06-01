@@ -18,10 +18,10 @@ const Header = () =>{
                             navbarScroll
                         >
                             <Nav.Link as={Link} to={'/Revista'}>Revista</Nav.Link>
-                            <Nav.Link as={Link} to={'/About'}>About</Nav.Link>
+                            <Nav.Link as={Link} to={'/Librat'}>Librat</Nav.Link>
                             <NavDropdown title="Link" id="navbarScrollingDropdown">
-                            <NavDropdown.Item as={Link} to={'/Profile'}>Profile</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to={'/LibraPerFemije'}>LibraPerFemije</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to={'/Tekste'}>Tekste</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action5">
                                 Something else here

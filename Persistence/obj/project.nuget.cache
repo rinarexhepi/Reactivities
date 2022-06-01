@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sdOq3K/8HUUtPkyj/l4HkFSAFVH6yXNhrL4E4qOQpuov1bSssSTrodOMaEybP464khAMK3D/IxZH5sPWscJq1g==",
+  "dgSpecHash": "mAHDxEPn/4iSp+VWkIxbKAdWeVG8wqkna0Kli8VZGC8eavu1W9iRLmIQi9t4KoKvkiHNDft8IHyrbPNbg2C4UQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rina\\Desktop\\GitHuubb\\LabCourse1\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Rina\\Desktop\\LabCourse1\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rina\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Rina\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
