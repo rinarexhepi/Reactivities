@@ -8,7 +8,7 @@ const Tekste = () => {
      const [tesktet, setTekstet] = useState([]);
 
     useEffect( () => {
-     axios.get('https://localhost:7067/Tekste').then(response => {
+     axios.get('https://localhost:7067/Tekstet').then(response => {
         console.log(response);
         setTekstet(response.data);
         })

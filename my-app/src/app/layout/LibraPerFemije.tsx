@@ -8,7 +8,7 @@ const LibraPerFemije = () => {
      const [libraPerFemije, setLibratPerFemije] = useState([]);
 
     useEffect( () => {
-     axios.get('https://localhost:7067/LibraPerFemije').then(response => {
+     axios.get('https://localhost:7067/LibratPerFemije').then(response => {
         console.log(response);
         setLibratPerFemije(response.data);
         })
@@ -20,16 +20,16 @@ const LibraPerFemije = () => {
         <>
 
         <Row>
-    {libraPerFemije.map((revista: any ) => (
-        <Card style={{ width: '18rem' }} key={revista.id}>
+    {libraPerFemije.map((libraFemije: any ) => (
+        <Card style={{ width: '18rem' }} key={libraFemije.id}>
         <Card.Body>
-            <Card.Title>{revista.emri}</Card.Title>
+            <Card.Title>{libraFemije.emri}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
             <Card.Text>
-            {revista.pershkrimi}
+            {libraFemije.pershkrimi}
             </Card.Text>
-            <Card.Link >{revista.autori}</Card.Link>
-            <Card.Link >{revista.zhanri}</Card.Link>
+            <Card.Link >{libraFemije.autori}</Card.Link>
+            <Card.Link >{libraFemije.zhanri}</Card.Link>
         </Card.Body>
         <Button variant='danger'>Delete</Button>
     </Card>

@@ -9,7 +9,7 @@ const Header = () =>{
         
             <Navbar bg="light" expand="lg">
                 <Container fluid>
-                        <Navbar.Brand as={Link} to={'/LandingPage'}>E-Library</Navbar.Brand>
+                        <Navbar.Brand as={Link} to={'/'}>E-Library</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -17,14 +17,17 @@ const Header = () =>{
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link as={Link} to={'/Revista'}>Revista</Nav.Link>
-                            <Nav.Link as={Link} to={'/Librat'}>Librat</Nav.Link>
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
-                            <NavDropdown.Item as={Link} to={'/LibraPerFemije'}>LibraPerFemije</NavDropdown.Item>
+                            <Nav.Link as={Link} to={'/dashboard'}>Dashboard</Nav.Link>
+                            <Nav.Link as={Link} to={'/about'}>About</Nav.Link>
+                            <Nav.Link as={Link} to={'/contact'}>Contact us</Nav.Link>
+                            <NavDropdown title="Kategorite" id="navbarScrollingDropdown">
+                            <NavDropdown.Item as={Link} to={'/Librat'}>Librat</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to={'/Revista'}>LibraPerFemije</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to={'/LibraPerFemije'}>Revista</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to={'/Tekste'}>Tekste</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action5">
-                                Something else here
+                                Te tjera
                             </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
