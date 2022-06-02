@@ -77,3 +77,4 @@ insert into LibraPerFemije VALUES (5656565654646, 'Vete', 'Charadadles Peapin', 
 insert into LibraPerFemije VALUES (2423424242433, 'besimi', 'asda Pepdsfin', 'Vetëbesimi është një çështje aq qendrore në ekzistencat tona, sa s’mund të jetë objekt i vetëm një disipline. Për t’ia kuptuar zemrekët, s’duhet të kërkojmë ta studiojmë në një laborator, por ta vëzhgojmë në jetën e vërtetë, ta shohim duke u lindur dhe rritur, t’ia përqafojmë ritmin dhe t’ia ndjekim lëvizjet, ngurrimet dhe rrëmbimet, t’i vrapojmë përbri siç ndjekim një fëmijë që desh rrëzohet, e pastaj e gjen ekuilibrin dhe hidhet përpara.', 'PEMA', 2021,'Psikologji','sfsf')
 
 select * from LibraPerFemije
+drop table Per_Femije

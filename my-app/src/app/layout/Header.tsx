@@ -22,8 +22,8 @@ const Header = () =>{
                             <Nav.Link as={Link} to={'/contact'}>Contact us</Nav.Link>
                             <NavDropdown title="Kategorite" id="navbarScrollingDropdown">
                             <NavDropdown.Item as={Link} to={'/Librat'}>Librat</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to={'/Revista'}>LibraPerFemije</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to={'/LibraPerFemije'}>Revista</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to={'/LibraPerFemije'}>LibraPerFemije</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to={'/Revista'}>Revista</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to={'/Tekste'}>Tekste</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action5">

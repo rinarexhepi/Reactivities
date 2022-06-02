@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Domain\\Domain.csproj": {
+    "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\dcerk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\fatli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dcerk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fatli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\dcerk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\fatli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dcerk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fatli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +88,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\dcerk\\Desktop\\labkursi\\LabCourse1\\Domain\\Domain.csproj"
+              "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\fatli\\Documents\\GitHub\\LabCourse1\\Domain\\Domain.csproj"
               }
             }
           }
@@ -132,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
