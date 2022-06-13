@@ -1,10 +1,12 @@
-export interface LibraPerFemije {
+export interface LibriModel{
     id: number;
     isbn: string;
     emri: string;
     autori: string;
     pershkrimi: string;
-    shtepia_botuese: string;
+    shtepia_Botuese: string;
+    viti_Publikimit: number;
     zhanri: string;
     foto: string;
-}
+  }
+      

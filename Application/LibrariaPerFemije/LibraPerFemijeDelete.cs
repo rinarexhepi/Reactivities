@@ -26,6 +26,8 @@ namespace Application.LibrariaPerFemije
 
                 _context.Remove(libriPerFemije);
 
+                await _context.SaveChangesAsync();
+
                 return Unit.Value;
             }
         }

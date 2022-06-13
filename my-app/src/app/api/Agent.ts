@@ -1,54 +1,44 @@
-import axios, { AxiosResponse } from 'axios';
-import { LibraPerFemije } from '../models/LibraPerFemije';
-import { LibratModel } from '../models/LibratModel';
-import { RevistaModel } from '../models/RevistaModel';
-import { TeksteModel } from '../models/TeksteModel';
+import axios, { AxiosResponse } from "axios";
+import { LibriModel } from "../models/LibriModel";
 
-axios.defaults.baseURL = 'https://localhost:7067';
+const sleep = (delay: number) => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, delay);
+  });
+};
 
-const responseBody = <T> (response: AxiosResponse<T>) => response.data;
+axios.defaults.baseURL = "https://localhost:7067";
 
+axios.interceptors.response.use(async (response) => {
+  try {
+        await sleep(750);
+        return response;
+    } catch (error) {
+        console.log(error);
+        return await Promise.reject(error);
+    }
+});
+
+const responseBody = <T>(response: AxiosResponse<T>) => response.data;
+
+//stores http requests
 const requests = {
-    get: <T>(url: string) => axios.get<T>(url).then(responseBody),
-    post: <T>(url: string, body: {}) => axios.post<T>(url, body).then(responseBody),
-    put: <T>(url: string, body: {}) => axios.put<T>(url, body).then(responseBody),
-    delete: <T>(url: string) => axios.delete<T>(url).then(responseBody),
-}
-
-const Revistat = {
-    revistaList: () => requests.get<RevistaModel[]>('/revistat'),
-    revistaById: (id: number) => requests.get<RevistaModel>('/revistat/'+id),
-    revistaCreate: (revista: RevistaModel) => requests.post<void>('revistat', revista),
-    revistaUpdate: (revista: RevistaModel) => requests.put<void>('revistat/${id}', revista),
-    revistaDelete: (id: number) => requests.delete<void>('revistat/'+id) // hedhja nje sy prap
-}
+  get: <T>(url: string) => axios.get<T>(url).then(responseBody),
+  post: <T>(url: string, body: {}) =>axios.post<T>(url, body).then(responseBody),
+  put: <T>(url: string, body: {}) => axios.put<T>(url, body).then(responseBody),
+  delete: <T>(url: string) => axios.delete<T>(url).then(responseBody),
+};
 
 const Librat = {
-    libratList: () => requests.get<LibratModel[]>('/librat'),
-    revistaById: (id: number) => requests.get<RevistaModel>('/revistat/'+id),
-    revistaCreate: (revista: RevistaModel) => requests.post<void>('revistat', revista),
-    revistaUpdate: (revista: RevistaModel) => requests.put<void>('revistat/${id}', revista),
-    revistaDelete: (id: number) => requests.delete<void>('revistat/'+id) // hedhja nje sy prap
-}
-
-const LibraPerFemije = {
-    libraPerFemijeList: () => requests.get<LibraPerFemije[]>('/libraPerFemije'),
-    revistaById: (id: number) => requests.get<RevistaModel>('/revistat/'+id),
-    revistaCreate: (revista: RevistaModel) => requests.post<void>('revistat', revista),
-    revistaUpdate: (revista: RevistaModel) => requests.put<void>('revistat/${id}', revista),
-    revistaDelete: (id: number) => requests.delete<void>('revistat/'+id) // hedhja nje sy prap
-}
-
-const Tekste = {
-    teksteList: () => requests.get<TeksteModel[]>('/tekte'),
-    revistaById: (id: number) => requests.get<RevistaModel>('/revistat/'+id),
-    revistaCreate: (revista: RevistaModel) => requests.post<void>('revistat', revista),
-    revistaUpdate: (revista: RevistaModel) => requests.put<void>('revistat/${id}', revista),
-    revistaDelete: (id: number) => requests.delete<void>('revistat/'+id) // hedhja nje sy prap
-}
+  list: () => requests.get<LibriModel[]>('/Librat'),
+  details:(id: number)=>requests.get<LibriModel>(`/Librat/${id}`),
+  create:(libri:LibriModel)=>requests.post<void>('/Librat', libri ),
+  update:(libri:LibriModel)=>requests.put<void>(`/Librat/${libri.id}`, libri),
+  delete:(id:number)=>requests.delete<void>(`/Librat/${id}`)
+};
 
 const agent = {
-    Revistat
-}
+  Librat
+};
 
 export default agent;
