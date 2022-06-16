@@ -1,19 +1,16 @@
+import { observer } from "mobx-react-lite";
 import React, { ChangeEvent, useState } from "react";
 import { Button, Form, Segment } from "semantic-ui-react";
-import { LibriModel } from "../../../app/models/LibriModel";
-
-//ketu eshte forma te cilen e plotesojme kur klikojme edit ose shto liber
+import { useStore } from "../../../app/stores/store";
 
 
-interface Props{
-  libri:LibriModel | undefined;
-  closeForm:()=>void;
-  createOrEdit:(libri:LibriModel)=> void;
-  submitting:boolean;
-}
 
 
-export default function LibriForm({libri:selectedLibri, closeForm, createOrEdit, submitting} :Props) {
+
+
+export default observer (function LibriForm() {
+  const {libriStore}=useStore();
+  const{selectedLibri, closeForm, createLibri, updateLibri, loading}=libriStore;
 
   const initialState= selectedLibri ??{
     id:0,
@@ -30,7 +27,7 @@ export default function LibriForm({libri:selectedLibri, closeForm, createOrEdit,
   const[libri, setLibri]= useState(initialState);
 
   function handleSubmit(){
-    createOrEdit(libri);
+    libri.id?updateLibri(libri): createLibri(libri);
   }
 
   function handleInputChange(event:ChangeEvent<HTMLInputElement | HTMLTextAreaElement>){
@@ -50,9 +47,9 @@ export default function LibriForm({libri:selectedLibri, closeForm, createOrEdit,
         <Form.Input placeholder="Viti i Publikimit" value={libri.viti_Publikimit} name="viti_Publikimit" onChange={handleInputChange}/>
         <Form.Input placeholder="Zhanri" value={libri.zhanri} name="zhanri" onChange={handleInputChange}/>
         <Form.Input  placeholder="Foto" value={libri.foto} name="foto" onChange={handleInputChange}/>
-        <Button loading={submitting} floated="right" positive type="submit" content="Submit" />
+        <Button loading={loading} floated="right" positive type="submit" content="Submit" />
         <Button onClick={closeForm} floated="right" type="button" content="Cancel" />
       </Form>
     </Segment>
   );
-}
+})

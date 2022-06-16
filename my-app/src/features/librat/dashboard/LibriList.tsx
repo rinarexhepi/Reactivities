@@ -1,19 +1,24 @@
-import React from "react";
+import { getValue } from "@testing-library/user-event/dist/utils";
+import { observer } from "mobx-react-lite";
+import React, { SyntheticEvent, useState } from "react";
 import { Button, Item, Segment } from "semantic-ui-react";
-import { LibriModel } from "../../../app/models/LibriModel";
+import { useStore } from "../../../app/stores/store";
 
-//thirrja e funksioneve qe na nevojiten per list component ne LibriDashboard.tsx
-interface Props {
-  librat: LibriModel[];
-  selectLibri: (id: number) => void;
-  deleteLibri:(id:number)=>void;
-}
 
-export default function LibriList({ librat, selectLibri, deleteLibri }: Props) {
+
+export default observer (function LibriList() {
+  const {libriStore}=useStore();
+  const{deleteLibri, libratByViti}=libriStore;
+  const[target, setTarget]= useState('');
+
+  function handleDeleteLibri(e: SyntheticEvent<HTMLButtonElement>, id: number){
+    setTarget(e.currentTarget.value);
+    deleteLibri(id);
+  }
   return (
     <Segment>
       <Item.Group divided>
-        {librat.map((libri) => (
+        {libratByViti.map(libri => (
           <Item key={libri.id}>
             <Item.Content>
               <Item.Header as="a">{libri.emri}</Item.Header>
@@ -26,8 +31,8 @@ export default function LibriList({ librat, selectLibri, deleteLibri }: Props) {
                 <div>{libri.zhanri}</div>
               </Item.Description>
               <Item.Extra>
-                <Button onClick={()=> selectLibri(libri.id)} floated='right' content='Shfaq' color='blue'/>
-                <Button onClick={()=> deleteLibri(libri.id)} floated='right' content='Fshij' color='red'/>
+                <Button onClick={()=> libriStore.selectLibri(libri.id)} floated='right' content='Shfaq' color='blue'/>
+                <Button value={libri.id}  onClick={(e)=> handleDeleteLibri(e, libri.id)} floated='right' content='Fshij' color='red'/>
               </Item.Extra>
             </Item.Content>
           </Item>
@@ -35,4 +40,4 @@ export default function LibriList({ librat, selectLibri, deleteLibri }: Props) {
       </Item.Group>
     </Segment>
   );
-}
+})
