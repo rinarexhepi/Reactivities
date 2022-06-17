@@ -1,6 +1,7 @@
 import { getValue } from "@testing-library/user-event/dist/utils";
 import { observer } from "mobx-react-lite";
 import React, { SyntheticEvent, useState } from "react";
+import { Link } from "react-router-dom";
 import { Button, Item, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 
@@ -31,7 +32,7 @@ export default observer (function LibriList() {
                 <div>{libri.zhanri}</div>
               </Item.Description>
               <Item.Extra>
-                <Button onClick={()=> libriStore.selectLibri(libri.id)} floated='right' content='Shfaq' color='blue'/>
+                <Button as={Link} to={`/librat/${libri.id}`} floated='right' content='Shfaq' color='blue'/>
                 <Button value={libri.id}  onClick={(e)=> handleDeleteLibri(e, libri.id)} floated='right' content='Fshij' color='red'/>
               </Item.Extra>
             </Item.Content>

@@ -20,12 +20,13 @@ export default class LibriStore {
     );
   }
 
-//funksion per VIEW(READ)
+  //funksion per VIEW(READ)
   loadLibrat = async () => {
+    this.loadingInitial=true;
     try {
       const librat = await agent.Librat.list();
       librat.forEach((libri) => {
-        this.libriRegistry.set(libri.id, libri);
+        this.setLibri(libri);
       });
 
       this.setLoadingInitial(false);
@@ -36,36 +37,39 @@ export default class LibriStore {
     }
   };
 
+  loadLibri = async (id: number) => {
+    let libri = this.getLibri(id);
+    if (libri) {
+      this.selectedLibri = libri;
+      return libri;
+    } else {
+      this.loadingInitial = true;
+      try {
+        libri = await agent.Librat.details(id);
+        this.setLibri(libri);
+        runInAction(()=>{
+          this.selectedLibri=(libri);
+        })
+        this.setLoadingInitial(false);
+        return libri;
+      } catch (error) {
+        console.log(error);
+        this.setLoadingInitial(false);
+      }
+    }
+  };
+
+  private setLibri = (libri: LibriModel) => {
+    this.libriRegistry.set(libri.id, libri);
+  };
+
+  private getLibri = (id: number) => {
+    return this.libriRegistry.get(id);
+  };
 
   setLoadingInitial = (state: boolean) => {
     this.loadingInitial = state;
   };
-
-
-  //funksion qe shkon ne LibriList per me mujt me bo select
-  selectLibri = (id: number) => {
-    this.selectedLibri = this.libriRegistry.get(id);
-  };
-
-
-  //funksion qe  mirret me rastin kur klikojme cancel
-  cancelSelectedLibri = () => {
-    this.selectedLibri = undefined;
-  };
-
-
-  //funksion qe e hap formen nese klikojme qofte per edit apo per create
-  openForm = (id?: number) => {
-    id ? this.selectLibri(id) : this.cancelSelectedLibri();
-    this.editMode = true;
-  };
-
-
-  //funksion qe kur tklikojme cancel, forma mbyllet
-  closeForm = () => {
-    this.editMode = false;
-  };
-
 
   //funksion per CREATE
   createLibri = async (libri: LibriModel) => {
@@ -86,7 +90,6 @@ export default class LibriStore {
     }
   };
 
-
   //funksion per UPDATE(EDIT)
   updateLibri = async (libri: LibriModel) => {
     this.loading = true;
@@ -105,7 +108,6 @@ export default class LibriStore {
     }
   };
 
-
   //funksion per DELETE
   deleteLibri = async (id: number) => {
     this.loading = true;
@@ -113,8 +115,6 @@ export default class LibriStore {
       await agent.Librat.delete(id);
       runInAction(() => {
         this.libriRegistry.delete(id);
-
-        if (this.selectedLibri?.id === id) this.cancelSelectedLibri();
         this.loading = false;
       });
     } catch (error) {

@@ -1,6 +1,8 @@
 import { observer } from "mobx-react-lite";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { Link, useHistory, useParams } from "react-router-dom";
 import { Button, Form, Segment } from "semantic-ui-react";
+import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { useStore } from "../../../app/stores/store";
 
 
@@ -9,31 +11,48 @@ import { useStore } from "../../../app/stores/store";
 
 
 export default observer (function LibriForm() {
+  const history=useHistory();
   const {libriStore}=useStore();
-  const{selectedLibri, closeForm, createLibri, updateLibri, loading}=libriStore;
+  const{createLibri, updateLibri, loading, loadLibri, loadingInitial}=libriStore;
+  const{id}=useParams<{id: any}>();
 
-  const initialState= selectedLibri ??{
-    id:0,
-    isbn: '',
-    emri: '',
-    autori: '',
-    pershkrimi: '',
-    shtepia_Botuese: '',
-    viti_Publikimit:0,
-    zhanri: '',
-    foto: '',
-  }
+  const[libri, setLibri]= useState({
+      id:0,
+      isbn: '',
+      emri: '',
+      autori: '',
+      pershkrimi: '',
+      shtepia_Botuese: '',
+      viti_Publikimit:0,
+      zhanri: '',
+      foto: '',
+  });
 
-  const[libri, setLibri]= useState(initialState);
+  useEffect(()=>{
+    if (id) loadLibri (id).then(libri=>setLibri(libri!))
+  }, [id, loadLibri]);
+
+
+
 
   function handleSubmit(){
-    libri.id?updateLibri(libri): createLibri(libri);
+    if(!libri.id){
+    let newLibri={
+      ...libri,
+      id
+    };
+    createLibri(newLibri).then(()=>history.push(`/librat/${newLibri.id}`))
+  }else{
+    updateLibri(libri).then(()=>history.push(`/librat/${libri.id}`))
   }
+}
 
   function handleInputChange(event:ChangeEvent<HTMLInputElement | HTMLTextAreaElement>){
     const{name, value}=event.target;
     setLibri({...libri, [name]: value})
   }
+
+  if(loadingInitial) return <LoadingComponent content="Loading Librat"/>
 
   return (
     <Segment clearing style={{marginBottom:'100px'}}>
@@ -48,7 +67,7 @@ export default observer (function LibriForm() {
         <Form.Input placeholder="Zhanri" value={libri.zhanri} name="zhanri" onChange={handleInputChange}/>
         <Form.Input  placeholder="Foto" value={libri.foto} name="foto" onChange={handleInputChange}/>
         <Button loading={loading} floated="right" positive type="submit" content="Submit" />
-        <Button onClick={closeForm} floated="right" type="button" content="Cancel" />
+        <Button as={Link} to='/librat' floated="right" type="button" content="Cancel" />
       </Form>
     </Segment>
   );
