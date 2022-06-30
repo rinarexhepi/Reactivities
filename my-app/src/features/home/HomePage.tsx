@@ -7,6 +7,8 @@ export default function HomePage(){
         <Container style={{marginTop: '7em'}}>
           <h1>Home</h1>  
           <h3>Go to <Link to='/librat'>Librat</Link></h3>  
+          <h3>Go to <Link to='/tekstet'>Tekstet</Link></h3>  
+          <h3>Go to <Link to='/revistat'>Revistat</Link></h3>  
         </Container>
     )
 }

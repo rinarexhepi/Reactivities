@@ -39,7 +39,7 @@ export default observer (function LibriModelDetails() {
       </Card.Content>
       <Card.Content extra>
         <Button.Group>
-          <Button as={Link} to ={`/manage/${libri.id}`} basic color="blue" content="Edit" />
+          <Button as={Link} to ={`/manage1/${libri.id}`} basic color="blue" content="Edit" />
           <Button as={Link} to ='/librat' basic color="red" content="Cancel" />
         </Button.Group>
       </Card.Content>

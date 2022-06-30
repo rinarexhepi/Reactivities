@@ -18,8 +18,16 @@ export default function NavBar() {
           FDR-Library
         </Menu.Item>
         <Menu.Item as={NavLink} to='/librat' name="Librat" />
+        <Menu.Item as={NavLink} to='/tekstet' name="Tekstet" />
+        <Menu.Item as={NavLink} to='/revistat' name="Revistat" />
         <Menu.Item>
           <Button as={NavLink} to='/createLibri' positive content="Shto liber" />
+        </Menu.Item>
+        <Menu.Item>
+          <Button as={NavLink} to='/createTeksti' positive content="Shto tekst" />
+        </Menu.Item>
+        <Menu.Item>
+          <Button as={NavLink} to='/createRevista' positive content="Shto reviste" />
         </Menu.Item>
       </Container>
     </Menu>

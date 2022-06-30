@@ -1,5 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 import { LibriModel } from "../models/LibriModel";
+import { RevistaModel } from "../models/RevistaModel";
+import { TekstiModel } from "../models/TekstiModel";
 
 const sleep = (delay: number) => {
   return new Promise((resolve) => {
@@ -37,8 +39,27 @@ const Librat = {
   delete:(id:number)=>requests.delete<void>(`/Librat/${id}`)
 };
 
+const Tekstet = {
+  list: () => requests.get<TekstiModel[]>('/Tekstet'),
+  details:(id: number)=>requests.get<TekstiModel>(`/Tekstet/${id}`),
+  create:(teksti:TekstiModel)=>requests.post<void>('/Tekstet', teksti ),
+  update:(teksti:TekstiModel)=>requests.put<void>(`/Tekstet/${teksti.id}`, teksti),
+  delete:(id:number)=>requests.delete<void>(`/Tekstet/${id}`)
+};
+
+const Revistat = {
+  list: () => requests.get<RevistaModel[]>('/Revista'),
+  details:(id: number)=>requests.get<RevistaModel>(`/Revista/${id}`),
+  create:(revista:RevistaModel)=>requests.post<void>('/Revista', revista ),
+  update:(revista:RevistaModel)=>requests.put<void>(`/Revista/${revista.id}`, revista),
+  delete:(id:number)=>requests.delete<void>(`/Revista/${id}`)
+};
+
+
 const agent = {
-  Librat
+  Librat,
+  Tekstet,
+  Revistat
 };
 
 export default agent;

@@ -1,5 +1,5 @@
 import { action, makeAutoObservable, runInAction } from "mobx";
-import agent from "../api/Agent";
+import agent from "../api/agent";
 import { LibriModel } from "../models/LibriModel";
 
 export default class LibriStore {
