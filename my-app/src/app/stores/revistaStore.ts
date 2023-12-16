@@ -1,5 +1,5 @@
 import { action, makeAutoObservable, runInAction } from "mobx";
-import agent from "../api/agent";
+import agent from "../api/Agent";
 import { RevistaModel } from "../models/RevistaModel";
 
 export default class RevistaStore {

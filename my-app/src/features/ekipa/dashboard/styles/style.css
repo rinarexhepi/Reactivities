@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1178px;
+    margin: 0 auto;
+}
+
+
+
+.block {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.block__top {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.block__title {
+    margin-bottom: 20px;
+    font-size: 39px;
+    line-height: 58px;
+    font-weight: 600;
+}
+
+.block__help-txt {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF5300;
+}
+
+.block__help-txt:after {
+    right: -49px;
+}
+
+.block__help-txt:before {
+    left: -49px;
+}
+
+.block__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+}
+
+
+.swiper--testimonial__person{
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper--testimonial__name{
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF5300;
+    font-weight: 500;
+}
+.swiper--testimonial__position{
+    font-size: 13;
+    line-height: 19px;
+    font-weight: 300;
+    color: #7B7B7B;
+}
+
+.swiper--testimonial__picture{
+    margin-right: 15px;
+}
+
+.swiper--testimonial__person:before{
+    content: url("data:image/svg+xml,%3Csvg width='46' height='35' viewBox='0 0 46 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z' fill='%23BCC1C7'/%3E%3C/svg%3E%0A");;
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.block--testimonials__slide{
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(red, green, blue, alpha);
+    border-radius: 15px;
+    padding: 25px;
+
+}
+
+.block--testimonials__top{
+    margin-bottom: 40px;
+}

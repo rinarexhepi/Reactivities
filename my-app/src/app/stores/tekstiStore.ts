@@ -1,5 +1,5 @@
 import { makeAutoObservable, runInAction } from "mobx";
-import agent from "../api/agent";
+import agent from "../api/Agent";
 import { TekstiModel } from "../models/TekstiModel";
 
 export default class TekstiStore {

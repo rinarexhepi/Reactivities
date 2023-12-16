@@ -103,3 +103,18 @@ C:\Users\dcerk\Desktop\labkursi\LabCourse1\Persistence\obj\Debug\net6.0\Persiste
 C:\Users\dcerk\Desktop\labkursi\LabCourse1\Persistence\obj\Debug\net6.0\refint\Persistence.dll
 C:\Users\dcerk\Desktop\labkursi\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.pdb
 C:\Users\dcerk\Desktop\labkursi\LabCourse1\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\bin\Debug\net6.0\Persistence.deps.json
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\bin\Debug\net6.0\Persistence.dll
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\bin\Debug\net6.0\Persistence.pdb
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\bin\Debug\net6.0\Domain.dll
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\bin\Debug\net6.0\Domain.pdb
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.dll
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\Persistence.pdb
+C:\Users\Rina\Desktop\clone folder\LabCourse1\Persistence\obj\Debug\net6.0\ref\Persistence.dll
